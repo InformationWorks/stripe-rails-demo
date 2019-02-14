@@ -1,0 +1,17 @@
+<div>
+
+  <% if @charge.status == "succeeded" %>
+    <div class="alert alert-success" role="alert">
+      Order was processed successfully.
+    </div>
+  <% else %>
+    <div class="alert alert-success" role="alert">
+      Order has failed.
+    </div>
+  <% end %>
+
+  <%=
+    p @charge
+  %>
+
+</div>

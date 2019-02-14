@@ -1,0 +1,19 @@
+<%= form_tag proceed_to_pay_path do %>
+
+<div class="row">
+  <div class="col-md-4 mb-3">
+    <label for="currency">Currency</label>
+    <select class="custom-select d-block w-100" id="state" name="currency" required="">
+      <option value="inr">INR</option>
+      <option value="usd">USD</option>
+    </select>
+  </div>
+  <div class="col-md-3 mb-3">
+    <label for="amount">Amount</label>
+    <input type="number" class="form-control" id="zip" name="amount" value="100" placeholder="" required="">
+  </div>
+</div>
+
+<%= submit_tag "Proceed" %>
+
+<% end %>
